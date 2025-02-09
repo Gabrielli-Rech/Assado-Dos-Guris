@@ -1,0 +1,144 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+}
+
+/* Header */
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Carrinho */
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#carrinho {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.item-carrinho:last-child {
+    border-bottom: none;
+}
+
+.item-carrinho img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-carrinho .detalhes {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.item-carrinho .detalhes h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item-carrinho .detalhes p {
+    color: #555;
+}
+
+.item-carrinho .preco {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    background-color: #ef4444;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #dc2626;
+}
+
+/* Resumo do Carrinho */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.text-xl {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text-lg {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #fbbf24;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

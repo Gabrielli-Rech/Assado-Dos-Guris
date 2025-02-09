@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Assado dos Guris</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="Cardapio.html">Cardápio</a></li>
+                <li><a href="Fale-Conosco.html">Fale Conosco</a></li>
+                <li><a href="Carrinho.html">Carrinho</a></li>
+                <li><a href="Login.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center mb-6">Carrinho</h1>
+        
+        <div id="carrinho" class="bg-white p-6 rounded-lg shadow-md">
+            <!-- Itens do carrinho serão gerados dinamicamente aqui -->
+        </div>
+
+        <div class="mt-6">
+            <h2 class="text-2xl font-bold mb-4">Informações para Entrega</h2>
+            <form id="form-entrega" class="bg-gray-100 p-6 rounded-lg">
+                <label class="block mb-2">Nome Completo</label>
+                <input type="text" class="w-full p-2 mb-4 border rounded" placeholder="Digite seu nome" required>
+                
+                <label class="block mb-2">Telefone</label>
+                <input type="tel" class="w-full p-2 mb-4 border rounded" placeholder="(99) 99999-9999" required>
+                
+                <label class="block mb-2">Endereço</label>
+                <input type="text" class="w-full p-2 mb-4 border rounded" placeholder="Rua, número, bairro" required>
+                
+                <label class="block mb-2">Cidade</label>
+                <input type="text" class="w-full p-2 mb-4 border rounded" placeholder="Digite sua cidade" required>
+                
+                <label class="block mb-2">CEP</label>
+                <input type="text" class="w-full p-2 mb-4 border rounded" placeholder="00000-000" required>
+            </form>
+        </div>
+
+        <div class="mt-6">
+            <div class="flex justify-between items-center">
+                <span class="text-xl font-semibold">Subtotal:</span>
+                <span id="subtotal" class="text-lg font-semibold">R$ 0,00</span>
+            </div>
+            <div class="flex justify-between items-center mt-4">
+                <span class="text-xl font-semibold">Frete:</span>
+                <span id="frete" class="text-lg font-semibold">R$ 0,00</span>
+            </div>
+            <div class="flex justify-between items-center mt-4">
+                <span class="text-xl font-semibold">Total:</span>
+                <span id="total" class="text-lg font-semibold">R$ 0,00</span>
+            </div>
+
+            <button id="finalizar-compra" class="mt-6 bg-green-500 text-white py-3 px-6 rounded-lg w-full hover:bg-green-600">
+                Finalizar Compra
+            </button>
+        </div>
+    </div>
+
+    <footer class="text-center p-6 bg-gray-800 text-white">
+        <p>&copy; 2025 Assado dos Guris. Todos os direitos reservados.</p>
+        <p>Contato: contato@assadodosguris.com | Telefone: (99) 99999-9999</p>
+    </footer>
+
+</body>
+</html>

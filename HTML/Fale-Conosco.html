@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Fale Conosco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">Assado dos Guris</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="Cardapio.html">Cardápio</a></li>
+                <li><a href="Fale-Conosco.html">Fale Conosco</a></li>
+                <li><a href="Carrinho.html">Carrinho</a></li>
+                <li><a href="Login.html">Entrar</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center mb-6">Fale Conosco</h1>
+
+        <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+            <p class="text-lg text-gray-700 mb-4">Tem alguma dúvida ou sugestão? Preencha o formulário abaixo e nossa equipe entrará em contato com você.</p>
+
+            <form id="contact-form" action="mailto:contato@assadodosguris.com" method="POST" enctype="text/plain">
+                <div class="mb-4">
+                    <label for="nome" class="block text-gray-700 font-semibold">Nome</label>
+                    <input type="text" id="nome" name="nome" required class="w-full p-3 border border-gray-300 rounded-md mt-2">
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-semibold">E-mail</label>
+                    <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-md mt-2">
+                </div>
+
+                <div class="mb-4">
+                    <label for="mensagem" class="block text-gray-700 font-semibold">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required class="w-full p-3 border border-gray-300 rounded-md mt-2"></textarea>
+                </div>
+
+                <div class="mb-4">
+                    <button type="submit" class="w-full bg-red-500 text-white py-3 rounded-md hover:bg-red-600">Enviar Mensagem</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Assado dos Guris. Todos os direitos reservados.</p>
+        <p>Contato: contato@assadodosguris.com | Telefone: (99) 99999-9999</p>
+        <ul>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Serviço</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
